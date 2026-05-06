@@ -1,0 +1,197 @@
+{
+  "_comment": "StratWatch Config — Défense · Nucléaire · Aérospatiale · Géopolitique",
+  "app": {
+    "title": "StratWatch Intel",
+    "description": "Veille stratégique — Défense & Armement · Nucléaire & Prolifération · Aérospatiale & Espace · Géopolitique & Renseignement",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0"
+  },
+  "collection": {
+    "max_items_per_feed": 15,
+    "request_timeout_seconds": 15,
+    "retry_on_timeout": true,
+    "retry_max_attempts": 3,
+    "deduplicate": true,
+    "scraping_enabled": true
+  },
+  "export": {
+    "default_format": "html",
+    "paths": {
+      "json": "stratwatch_export.json",
+      "csv": "stratwatch_export.csv",
+      "html": "stratwatch_dashboard.html"
+    }
+  },
+  "categories": [
+    {
+      "name": "Défense & Armement",
+      "color": "#e05c2a",
+      "priority": 1,
+      "feeds": [
+        {"name": "Defense One", "url": "https://www.defenseone.com/rss/"},
+        {"name": "Breaking Defense", "url": "https://breakingdefense.com/feed/"},
+        {"name": "Defense News", "url": "https://www.defensenews.com/arc/outbound/rss"},
+        {"name": "Opex360", "url": "https://www.opex360.com/feed/"},
+        {"name": "Jane's Defence", "url": "https://www.janes.com/feeds/news"},
+        {"name": "Army Technology", "url": "https://www.army-technology.com/feed/"},
+        {"name": "Naval News", "url": "https://www.navalnews.com/feed/"},
+        {"name": "Naval Today", "url": "https://navaltoday.com/feed/"},
+        {"name": "The Drive — War Zone", "url": "https://www.thedrive.com/the-war-zone/rss"},
+        {"name": "Shephard Media", "url": "https://www.shephardmedia.com/rss/news/"},
+        {"name": "Armée de Terre FR", "url": "https://www.defense.gouv.fr/terre/feed"},
+        {"name": "DGA Actualités", "url": "https://www.defense.gouv.fr/dga/feed"},
+        {"name": "UK MoD — Defence News", "url": "https://www.gov.uk/government/organisations/ministry-of-defence.atom"},
+        {"name": "USNI News", "url": "https://news.usni.org/feed"},
+        {"name": "Soldier Systems", "url": "https://soldiersystems.net/feed/"},
+        {"name": "Military.com News", "url": "https://www.military.com/rss-feeds/content?category=news"},
+        {"name": "IHS Jane's 360", "url": "https://www.janes.com/rss"},
+        {"name": "Small Wars Journal", "url": "https://smallwarsjournal.com/blog/feed"},
+        {"name": "Modern War Institute", "url": "https://mwi.westpoint.edu/feed/"},
+        {"name": "IISS — Military Balance", "url": "https://www.iiss.org/rss"}
+      ]
+    },
+    {
+      "name": "Nucléaire & Prolifération",
+      "color": "#ff6b35",
+      "priority": 1,
+      "feeds": [
+        {"name": "Bulletin of the Atomic Scientists", "url": "https://thebulletin.org/feed/"},
+        {"name": "Arms Control Association", "url": "https://www.armscontrol.org/rss.xml"},
+        {"name": "Arms Control Wonk", "url": "https://www.armscontrolwonk.com/feed.xml"},
+        {"name": "FAS — Secrecy News", "url": "https://fas.org/blogs/secrecy/feed/"},
+        {"name": "FAS — Strategic Security", "url": "https://fas.org/publication/fas-and-strategic-security/feed/"},
+        {"name": "Nuclear Threat Initiative (NTI)", "url": "https://www.nti.org/feed/"},
+        {"name": "NTI — Atomic Pulse", "url": "https://www.nti.org/risky-business/feed/"},
+        {"name": "Nuclear Secrecy Blog", "url": "https://blog.nuclearsecrecy.com/feed/"},
+        {"name": "38 North — DPRK Nucléaire", "url": "https://www.38north.org/feed/"},
+        {"name": "SIPRI — Armements", "url": "https://www.sipri.org/rss"},
+        {"name": "War on the Rocks — Nuclear", "url": "https://warontherocks.com/category/nuclear-weapons/feed/"},
+        {"name": "Union of Concerned Scientists", "url": "https://blog.ucs.org/category/global-security/feed/"},
+        {"name": "ICAN — Campagne Abolition", "url": "https://www.icanw.org/updates.rss"},
+        {"name": "Nuclear News (ANS)", "url": "https://nuclear-news.net/feed/"},
+        {"name": "NRC — US Nuclear Regulatory", "url": "https://www.nrc.gov/public-involve/rss-feeds/news-releases.xml"},
+        {"name": "NNSA — National Security", "url": "https://www.energy.gov/nnsa/rss.xml"},
+        {"name": "AIEA — Actualités", "url": "https://www.iaea.org/feeds/rss/news.rss"},
+        {"name": "CTBTO — Comprehensive Test Ban", "url": "https://www.ctbto.org/rss"},
+        {"name": "Middlebury Institute CNS", "url": "https://www.nonproliferation.org/feed/"},
+        {"name": "Stimson Center — Nuclear", "url": "https://www.stimson.org/topic/nuclear/feed/"}
+      ]
+    },
+    {
+      "name": "Aérospatiale & Défense Aérienne",
+      "color": "#7c5cbf",
+      "priority": 2,
+      "feeds": [
+        {"name": "Aviation Week — Defense", "url": "https://aviationweek.com/rss"},
+        {"name": "Air & Cosmos", "url": "https://www.air-cosmos.com/feed"},
+        {"name": "Aerobuzz", "url": "https://www.aerobuzz.fr/feed/"},
+        {"name": "Defense News — Air", "url": "https://www.defensenews.com/air/rss/"},
+        {"name": "FlightGlobal", "url": "https://www.flightglobal.com/rss"},
+        {"name": "Air Force Magazine", "url": "https://www.airforcemag.com/feed/"},
+        {"name": "Space News", "url": "https://spacenews.com/feed/"},
+        {"name": "The Space Review", "url": "https://www.thespacereview.com/RSS"},
+        {"name": "SpaceFlightNow", "url": "https://spaceflightnow.com/feed/"},
+        {"name": "ESA — News", "url": "https://www.esa.int/rssfeed/Our_Activities/Space_News"},
+        {"name": "NASA — Breaking News", "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss"},
+        {"name": "Parabolic Arc", "url": "https://parabolicarc.com/feed/"},
+        {"name": "SpacePolicyOnline", "url": "https://spacepolicyonline.com/feed/"},
+        {"name": "Ars Technica — Space", "url": "https://feeds.arstechnica.com/arstechnica/science"},
+        {"name": "AIN Online", "url": "https://www.ainonline.com/rss.xml"},
+        {"name": "GIFAS — Actualités", "url": "https://www.gifas.fr/feed/"},
+        {"name": "Armée de l'Air & Espace", "url": "https://www.defense.gouv.fr/aaae/feed"},
+        {"name": "C4ISRNET", "url": "https://www.c4isrnet.com/rss/"},
+        {"name": "NightWatch — Space Intel", "url": "https://www.thespacereview.com/RSS"},
+        {"name": "LeoLabs Space", "url": "https://leolabs.com/feed/"}
+      ]
+    },
+    {
+      "name": "Renseignement & Opérations Spéciales",
+      "color": "#2ecc71",
+      "priority": 1,
+      "feeds": [
+        {"name": "RAND Corporation", "url": "https://www.rand.org/pubs/rss"},
+        {"name": "War on the Rocks", "url": "https://warontherocks.com/feed/"},
+        {"name": "Bellingcat OSINT", "url": "https://www.bellingcat.com/feed/"},
+        {"name": "Intel Today", "url": "https://inteltoday.org/feed/"},
+        {"name": "The Cipher Brief", "url": "https://thecipherbrief.com/feed"},
+        {"name": "Lawfare — National Security", "url": "https://www.lawfaremedia.org/feed"},
+        {"name": "Just Security", "url": "https://www.justsecurity.org/feed/"},
+        {"name": "CNA — Analysis", "url": "https://www.cna.org/rss.xml"},
+        {"name": "CSIS — Strategic Studies", "url": "https://www.csis.org/rss"},
+        {"name": "ISW — War Updates", "url": "https://www.understandingwar.org/feed"},
+        {"name": "ACLED — Conflict Data", "url": "https://acleddata.com/feed/"},
+        {"name": "Wilson Center", "url": "https://www.wilsoncenter.org/rss.xml"},
+        {"name": "Intercept — National Sec.", "url": "https://theintercept.com/feed/?rss"},
+        {"name": "ProPublica National Sec.", "url": "https://www.propublica.org/feeds/propublica/national-security"},
+        {"name": "Transparency International", "url": "https://www.transparency.org/en/feed"}
+      ]
+    },
+    {
+      "name": "Géopolitique & Relations Internationales",
+      "color": "#e84393",
+      "priority": 2,
+      "feeds": [
+        {"name": "Foreign Affairs", "url": "https://www.foreignaffairs.com/rss.xml"},
+        {"name": "Foreign Policy", "url": "https://foreignpolicy.com/feed/"},
+        {"name": "The Economist — World", "url": "https://www.economist.com/the-world-this-week/rss.xml"},
+        {"name": "Le Grand Continent", "url": "https://legrandcontinent.eu/feed/"},
+        {"name": "IRIS — Géopolitique", "url": "https://www.iris-france.org/feed/"},
+        {"name": "Institut Montaigne", "url": "https://www.institutmontaigne.org/rss"},
+        {"name": "Council on Foreign Relations", "url": "https://www.cfr.org/rss/all"},
+        {"name": "Carnegie Endowment", "url": "https://carnegieendowment.org/rss"},
+        {"name": "Chatham House", "url": "https://www.chathamhouse.org/rss"},
+        {"name": "Brookings Institution", "url": "https://www.brookings.edu/feed/"},
+        {"name": "Atlantic Council", "url": "https://www.atlanticcouncil.org/feed/"},
+        {"name": "Reuters — World", "url": "https://feeds.reuters.com/reuters/worldNews"},
+        {"name": "Le Monde — International", "url": "https://www.lemonde.fr/international/rss_full.xml"},
+        {"name": "Courrier International", "url": "https://www.courrierinternational.com/feed/all/rss.xml"},
+        {"name": "Orient XXI", "url": "https://orientxxi.info/feed/"},
+        {"name": "ISN ETH Zürich", "url": "https://www.files.ethz.ch/isn/rss/isn_rss.xml"},
+        {"name": "Stratfor Worldview", "url": "https://worldview.stratfor.com/rss"},
+        {"name": "War on the Rocks — Policy", "url": "https://warontherocks.com/category/foreign-policy/feed/"},
+        {"name": "ECFR — European Policy", "url": "https://ecfr.eu/feed/"},
+        {"name": "IFRI — Actualités", "url": "https://www.ifri.org/fr/rss"}
+      ]
+    },
+    {
+      "name": "Conflits & Terrain",
+      "color": "#c0392b",
+      "priority": 1,
+      "feeds": [
+        {"name": "ISW — Ukraine/Russia", "url": "https://www.understandingwar.org/feed"},
+        {"name": "UA Warspotting", "url": "https://www.oryxspioenkop.com/feeds/posts/default"},
+        {"name": "Oryx — Equipment Losses", "url": "https://www.oryxspioenkop.com/feeds/posts/default"},
+        {"name": "Kyiv Independent", "url": "https://kyivindependent.com/feed/"},
+        {"name": "Middle East Eye", "url": "https://www.middleeasteye.net/rss"},
+        {"name": "Al-Monitor", "url": "https://www.al-monitor.com/rss"},
+        {"name": "38 North — Korean Peninsula", "url": "https://www.38north.org/feed/"},
+        {"name": "South China Morning Post", "url": "https://www.scmp.com/rss/91/feed"},
+        {"name": "The Diplomat", "url": "https://thediplomat.com/feed/"},
+        {"name": "Radio Free Europe", "url": "https://www.rferl.org/api/z-pqejiuivur"},
+        {"name": "Africa Defense Forum", "url": "https://adf-magazine.com/feed/"},
+        {"name": "Sudan War Monitor", "url": "https://sudanwarmonitor.com/feed/"},
+        {"name": "Long War Journal", "url": "https://www.longwarjournal.org/feed"},
+        {"name": "Conflict Monitor ACLED", "url": "https://acleddata.com/feed/"},
+        {"name": "Jane's Terrorism & Insurgency", "url": "https://www.janes.com/feeds/news"}
+      ]
+    },
+    {
+      "name": "Cyber-Défense & Guerre Électronique",
+      "color": "#00d4aa",
+      "priority": 2,
+      "feeds": [
+        {"name": "C4ISRNET — Cyber", "url": "https://www.c4isrnet.com/cyber/rss/"},
+        {"name": "Fifth Domain", "url": "https://www.fifthdomain.com/feed/"},
+        {"name": "CyberScoop — Gov/Defense", "url": "https://cyberscoop.com/feed/"},
+        {"name": "CISA — Alertes", "url": "https://www.cisa.gov/news.xml"},
+        {"name": "NSA — Cybersecurity", "url": "https://www.nsa.gov/news-features/press-room/rss/"},
+        {"name": "ANSSI — Alertes", "url": "https://www.cert.ssi.gouv.fr/feed/"},
+        {"name": "ENISA — News", "url": "https://www.enisa.europa.eu/news/rss"},
+        {"name": "Recorded Future — Nation-State", "url": "https://www.recordedfuture.com/category/nation-state/feed"},
+        {"name": "Mandiant APT Research", "url": "https://www.mandiant.com/resources/blog/rss.xml"},
+        {"name": "SentinelOne — Nation-State", "url": "https://www.sentinelone.com/labs/feed/"},
+        {"name": "Lawfare — Cybersecurity", "url": "https://www.lawfaremedia.org/topics/cybersecurity/feed"},
+        {"name": "NATO CCDCOE", "url": "https://ccdcoe.org/feed/"}
+      ]
+    }
+  ]
+}

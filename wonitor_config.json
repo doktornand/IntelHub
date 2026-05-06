@@ -1,0 +1,179 @@
+{
+  "_comment": "Configuration Wonitor - Veille Cyber, Défense & Nucléaire enrichie",
+  "app": {
+    "title": "Intelligence Watch Pro",
+    "description": "Agrégateur RSS — Cybersécurité Offensive · Défense & Renseignement · Nucléaire Stratégique · Géopolitique",
+    "user_agent": "Mozilla/5.0 (NewsAggregator/2.0; +python)"
+  },
+  "collection": {
+    "max_items_per_feed": 15,
+    "request_timeout_seconds": 12,
+    "retry_on_timeout": true,
+    "retry_max_attempts": 3
+  },
+  "export": {
+    "default_format": "html",
+    "paths": {
+      "json": "news_export.json",
+      "csv": "news_export.csv",
+      "html": "wonitor_dashboard.html"
+    }
+  },
+  "categories": [
+    {
+      "name": "Cybersécurité - Exploits & CVEs",
+      "color": "#ff2a6d",
+      "feeds": [
+        {"name": "CISA KEV Catalog", "url": "https://raw.githubusercontent.com/CryptoGenNepal/CVE-KEV-RSS/main/kev_feed.xml"},
+        {"name": "Exploit-DB", "url": "https://www.exploit-db.com/rss.xml"},
+        {"name": "CVEfeed.io", "url": "https://cvefeed.io/rssfeed/latest.xml"},
+        {"name": "GreyNoise KEV Ransomware", "url": "https://kev.labs.greynoise.io/kev-ransom-feed.rss"},
+        {"name": "NVD National Vuln DB", "url": "https://nvd.nist.gov/feeds/xml/cve/misc/nvd-rss.xml"},
+        {"name": "VulDB", "url": "https://vuldb.com/rss/feed.rss"},
+        {"name": "Rapid7 Vuln Disclosure", "url": "https://www.rapid7.com/rss/vulnerability-disclosure.xml"}
+      ]
+    },
+    {
+      "name": "Cybersécurité - Malware & Threat Intel",
+      "color": "#05d5fa",
+      "feeds": [
+        {"name": "ANY.RUN Malware Analysis", "url": "https://any.run/cybersecurity-blog/category/malware-analysis/feed/"},
+        {"name": "Malware-Traffic-Analysis", "url": "https://malware-traffic-analysis.net/blog-entries.rss"},
+        {"name": "NVISO Labs Malware", "url": "https://blog.nviso.eu/category/malware/feed/"},
+        {"name": "ReversingLabs", "url": "https://www.reversinglabs.com/blog/tag/malware/rss.xml"},
+        {"name": "Malware Patrol", "url": "https://www.malwarepatrol.net/blog/feed/"},
+        {"name": "Kryptos Logic", "url": "https://kryptoslogic.com/blog/category/malware/feed/"},
+        {"name": "My Online Security", "url": "https://myonlinesecurity.co.uk/category/malware/feed/"},
+        {"name": "ThreatFox IOCs", "url": "https://threatfox.abuse.ch/browse/rss/"},
+        {"name": "MalwareBazaar", "url": "https://bazaar.abuse.ch/browse/rss/"},
+        {"name": "URLhaus", "url": "https://urlhaus.abuse.ch/browse/rss/"},
+        {"name": "Feodo Tracker", "url": "https://feodotracker.abuse.ch/browse/rss/"},
+        {"name": "CyberCrime Tracker", "url": "https://cybercrime-tracker.net/rss.xml"}
+      ]
+    },
+    {
+      "name": "Cybersécurité - News & Analyses",
+      "color": "#00d4aa",
+      "feeds": [
+        {"name": "ANSSI – Alertes", "url": "https://www.cert.ssi.gouv.fr/feed/"},
+        {"name": "CERT-FR – Bulletins", "url": "https://www.cert.ssi.gouv.fr/alerte/feed/"},
+        {"name": "ENISA News", "url": "https://www.enisa.europa.eu/news/rss"},
+        {"name": "Krebs on Security", "url": "https://krebsonsecurity.com/feed/"},
+        {"name": "Schneier on Security", "url": "https://www.schneier.com/feed/atom"},
+        {"name": "Google Project Zero", "url": "https://googleprojectzero.blogspot.com/feeds/posts/default"},
+        {"name": "The Hacker News", "url": "https://feeds.feedburner.com/TheHackersNews"},
+        {"name": "BleepingComputer", "url": "https://www.bleepingcomputer.com/feed/"},
+        {"name": "Dark Reading", "url": "https://www.darkreading.com/rss.xml"},
+        {"name": "SecurityWeek", "url": "https://feeds.feedburner.com/securityweek"},
+        {"name": "Recorded Future", "url": "https://www.recordedfuture.com/feed"},
+        {"name": "Cyber Scoop", "url": "https://cyberscoop.com/feed/"},
+        {"name": "HIBP – Breaches", "url": "https://feeds.feedburner.com/HaveIBeenPwnedLatestBreaches"},
+        {"name": "Threatpost", "url": "https://threatpost.com/feed/"},
+        {"name": "SANS Internet Storm Center", "url": "https://isc.sans.edu/rssfeed.xml"},
+        {"name": "Cisco Talos", "url": "https://blog.talosintelligence.com/feeds/posts/default"},
+        {"name": "Microsoft Security", "url": "https://www.microsoft.com/en-us/security/blog/feed/"},
+        {"name": "CrowdStrike Blog", "url": "https://www.crowdstrike.com/blog/feed/"}
+      ]
+    },
+    {
+      "name": "Nucléaire & Armes Stratégiques",
+      "color": "#ff6b35",
+      "feeds": [
+        {"name": "FAS - Secrecy News", "url": "https://fas.org/blogs/secrecy/feed/"},
+        {"name": "FAS - Strategic Security", "url": "https://fas.org/publication/fas-and-strategic-security/feed/"},
+        {"name": "Nuclear Threat Initiative", "url": "https://www.nti.org/feed/"},
+        {"name": "Arms Control Wonk", "url": "https://www.armscontrolwonk.com/feed.xml"},
+        {"name": "Nuclear Secrecy Blog", "url": "https://blog.nuclearsecrecy.com/feed/"},
+        {"name": "ICAN - Campagne Abolition", "url": "https://www.icanw.org/updates.rss"},
+        {"name": "Atomic Pulse NTI", "url": "https://www.nti.org/risky-business/feed/"},
+        {"name": "SIPRI - Armements", "url": "https://www.sipri.org/rss"},
+        {"name": "NRC - US Nuclear Regul.", "url": "https://www.nrc.gov/public-involve/rss-feeds/news-releases.xml"},
+        {"name": "NNSA - National Security", "url": "https://www.energy.gov/nnsa/rss.xml"},
+        {"name": "Union Concerned Scientists", "url": "https://blog.ucs.org/category/global-security/feed/"},
+        {"name": "Nuclear News", "url": "https://nuclear-news.net/feed/"},
+        {"name": "Bulletin Atomic Scientists", "url": "https://thebulletin.org/feed/"},
+        {"name": "War on the Rocks - Nuclear", "url": "https://warontherocks.com/category/nuclear-weapons/feed/"},
+        {"name": "38 North - DPRK Nucléaire", "url": "https://www.38north.org/feed/"}
+      ]
+    },
+    {
+      "name": "Défense & Renseignement",
+      "color": "#e05c2a",
+      "feeds": [
+        {"name": "RAND Corporation", "url": "https://www.rand.org/pubs/rss"},
+        {"name": "IISS", "url": "https://www.iiss.org/rss"},
+        {"name": "Jane's Defence", "url": "https://www.janes.com/feeds/news"},
+        {"name": "Defense One", "url": "https://www.defenseone.com/rss/"},
+        {"name": "Opex360", "url": "https://www.opex360.com/feed/"},
+        {"name": "Defense News", "url": "https://www.defensenews.com/arc/outbound/rss"},
+        {"name": "Breaking Defense", "url": "https://breakingdefense.com/feed/"},
+        {"name": "Army Technology", "url": "https://www.army-technology.com/feed/"},
+        {"name": "Naval News", "url": "https://www.navalnews.com/feed/"},
+        {"name": "Janes Intelligence Review", "url": "https://www.janes.com/rss"},
+        {"name": "Stratfor Worldview", "url": "https://worldview.stratfor.com/rss"},
+        {"name": "ISN ETH Zurich", "url": "https://isn.ethz.ch/Digital-Library/ISN-RSS-Feeds.html"},
+        {"name": "CSIS - Center Strategic", "url": "https://www.csis.org/rss"},
+        {"name": "Atlantic Council Defense", "url": "https://www.atlanticcouncil.org/topic/defense-security/feed/"},
+        {"name": "CNA - Analysis & Solutions", "url": "https://www.cna.org/rss.xml"}
+      ]
+    },
+    {
+      "name": "Aérospatiale & Spatial",
+      "color": "#7c5cbf",
+      "feeds": [
+        {"name": "Air & Cosmos", "url": "https://www.air-cosmos.com/feed"},
+        {"name": "Aerobuzz", "url": "https://www.aerobuzz.fr/feed/"},
+        {"name": "Aviation Week", "url": "https://aviationweek.com/rss"},
+        {"name": "Defense News – Air", "url": "https://www.defensenews.com/arc/outbound/rss"},
+        {"name": "Space News", "url": "https://spacenews.com/feed/"},
+        {"name": "The Space Review", "url": "https://www.thespacereview.com/RSS"},
+        {"name": "Parabolic Arc", "url": "https://parabolicarc.com/feed/"},
+        {"name": "ESA – News", "url": "https://www.esa.int/rssfeed/Our_Activities/Space_News"},
+        {"name": "NASA – Breaking News", "url": "https://www.nasa.gov/rss/dyn/breaking_news.rss"},
+        {"name": "SpaceFlightNow", "url": "https://spaceflightnow.com/feed/"},
+        {"name": "Ars Technica – Science", "url": "https://feeds.arstechnica.com/arstechnica/science"},
+        {"name": "AeroWeb (GIFAS)", "url": "https://www.gifas.fr/feed/"},
+        {"name": "SpacePolicyOnline", "url": "https://spacepolicyonline.com/feed/"},
+        {"name": "LeoLabs Space", "url": "https://leolabs.com/feed/"}
+      ]
+    },
+    {
+      "name": "Trafic Aérien",
+      "color": "#f5a623",
+      "feeds": [
+        {"name": "The Aviation Herald", "url": "https://avherald.com/rss.xml"},
+        {"name": "AIN Online", "url": "https://www.ainonline.com/rss.xml"},
+        {"name": "Simple Flying", "url": "https://simpleflying.com/feed/"},
+        {"name": "Airways Magazine", "url": "https://airwaysmag.com/feed/"},
+        {"name": "Runway Girl Network", "url": "https://runwaygirlnetwork.com/feed/"},
+        {"name": "ch-aviation", "url": "https://www.ch-aviation.com/rss.xml"},
+        {"name": "IATA – News", "url": "https://www.iata.org/en/pressroom/rss/"},
+        {"name": "Eurocontrol – News", "url": "https://www.eurocontrol.int/rss.xml"},
+        {"name": "Le Journal de l'Aviation", "url": "https://www.journal-aviation.com/feed/"},
+        {"name": "Aviation24.be", "url": "https://www.aviation24.be/feed/"},
+        {"name": "ATC Network", "url": "https://www.atcnetwork.com/feed/"}
+      ]
+    },
+    {
+      "name": "Géopolitique & Stratégie",
+      "color": "#e84393",
+      "feeds": [
+        {"name": "Le Monde – International", "url": "https://www.lemonde.fr/international/rss_full.xml"},
+        {"name": "Foreign Affairs", "url": "https://www.foreignaffairs.com/rss.xml"},
+        {"name": "The Economist – World", "url": "https://www.economist.com/the-world-this-week/rss.xml"},
+        {"name": "IRIS – Géopolitique", "url": "https://www.iris-france.org/feed/"},
+        {"name": "Council on Foreign Relations", "url": "https://www.cfr.org/rss/all"},
+        {"name": "Reuters – World News", "url": "https://feeds.reuters.com/reuters/worldNews"},
+        {"name": "Courrier International", "url": "https://www.courrierinternational.com/feed/all/rss.xml"},
+        {"name": "Géopolitique.eu", "url": "https://geopolitique.eu/feed/"},
+        {"name": "Le Grand Continent", "url": "https://legrandcontinent.eu/feed/"},
+        {"name": "Brookings Institution", "url": "https://www.brookings.edu/feed/"},
+        {"name": "Bellingcat", "url": "https://www.bellingcat.com/feed/"},
+        {"name": "War on the Rocks", "url": "https://warontherocks.com/feed/"},
+        {"name": "Orient XXI", "url": "https://orientxxi.info/feed/"},
+        {"name": "Carnegie Endowment", "url": "https://carnegieendowment.org/rss"},
+        {"name": "Chatham House", "url": "https://www.chathamhouse.org/rss"}
+      ]
+    }
+  ]
+}

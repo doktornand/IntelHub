@@ -1,0 +1,28 @@
+# ═══════════════════════════════════════════════════════════
+# StratIntel Hub — Dépendances Python
+# Compatible Python 3.10+
+# ═══════════════════════════════════════════════════════════
+
+# ── Framework & Interface ──
+streamlit>=1.32.0
+rich>=13.7.0
+
+# ── Traitement de données & Validation ──
+pandas>=2.1.0
+pydantic>=2.5.0
+python-dateutil>=2.8.2
+
+# ── Collecte Web & Scraping ──
+requests>=2.31.0
+beautifulsoup4>=4.12.2
+lxml>=4.9.3
+
+# ── Parsing RSS/Atom ──
+feedparser>=6.0.11
+
+# ── Utilitaires (optionnels, utilisés dans les scripts standalone) ──
+# plotly>=5.18.0        # Pour graphiques avancés si besoin
+# wordcloud>=1.9.0      # Pour nuages de mots (legacy Wonitor)
+# schedule>=1.2.0       # Pour planification cron interne
+# apscheduler>=3.10.4   # Alternative robuste à schedule
+pyvis

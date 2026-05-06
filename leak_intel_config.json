@@ -1,0 +1,98 @@
+{
+  "_comment": "LeakHunter Config v2.0 — Data Leaks Enhanced Edition",
+  "app": {
+    "title": "LeakHunter Pro",
+    "description": "Veille offensive spécialisée Data Leaks · Breaches · Credentials · Dark Web",
+    "user_agent": "Mozilla/5.0 (X11; Linux x86_64; rv:120.0) Gecko/20100101 Firefox/120.0"
+  },
+  "collection": {
+    "max_items_per_feed": 25,
+    "request_timeout_seconds": 20,
+    "retry_on_timeout": true,
+    "retry_max_attempts": 3,
+    "deduplicate": true,
+    "min_severity_filter": null,
+    "scraping_enabled": true,
+    "leak_focused_mode": true
+  },
+  "export": {
+    "default_format": "html",
+    "paths": {
+      "json": "leakhunter_export.json",
+      "csv": "leakhunter_export.csv",
+      "html": "leakhunter_dashboard.html"
+    }
+  },
+  "categories": [
+    {
+      "name": "Data Leaks & Breaches — PREMIUM",
+      "color": "#ff0040",
+      "priority": 0,
+      "feeds": [
+        {"name": "Security Affairs — Pierluigi Paganini", "url": "https://securityaffairs.com/feed", "priority": "critical", "max_items": 30},
+        {"name": "Hackmageddon — Cyber Attacks", "url": "https://www.hackmageddon.com/feed/", "priority": "high"},
+        {"name": "The Hacker News", "url": "https://feeds.feedburner.com/TheHackersNews", "priority": "critical"},
+        {"name": "Infosecurity Magazine — Breaches", "url": "https://www.infosecurity-magazine.com/data-breaches/rss.xml", "priority": "high"},
+        {"name": "BleepingComputer — Breach", "url": "https://www.bleepingcomputer.com/tag/breach/feed/", "priority": "high"},
+        {"name": "Cybernews — Leaks", "url": "https://cybernews.com/tag/data-breach/feed/", "priority": "high"},
+        {"name": "HIBP — Latest Breaches", "url": "https://feeds.feedburner.com/HaveIBeenPwnedLatestBreaches", "priority": "high"},
+        {"name": "DataBreaches.net", "url": "https://www.databreaches.net/feed/", "priority": "high"},
+        {"name": "Krebs on Security", "url": "https://krebsonsecurity.com/feed/", "priority": "high"},
+        {"name": "Dark Reading", "url": "https://www.darkreading.com/rss.xml", "priority": "medium"},
+        {"name": "IT Security Guru", "url": "https://itsecurityguru.org/feed", "priority": "medium"},
+        {"name": "HackRead", "url": "https://hackread.com/feed", "priority": "medium"},
+        {"name": "GBHackers", "url": "https://gbhackers.com/feed", "priority": "medium"},
+        {"name": "Troy Hunt Blog", "url": "https://www.troyhunt.com/rss/", "priority": "medium"},
+        {"name": "Privacy Affairs", "url": "https://www.privacyaffairs.com/feed/", "priority": "medium"}
+      ]
+    },
+    {
+      "name": "Exploits & PoC",
+      "color": "#ff6b00",
+      "priority": 1,
+      "feeds": [
+        {"name": "Exploit-DB", "url": "https://www.exploit-db.com/rss.xml"},
+        {"name": "PacketStorm", "url": "https://rss.packetstormsecurity.com/files/"},
+        {"name": "CISA KEV", "url": "https://raw.githubusercontent.com/CryptoGenNepal/CVE-KEV-RSS/main/kev_feed.xml"},
+        {"name": "Project Zero", "url": "https://googleprojectzero.blogspot.com/feeds/posts/default"},
+        {"name": "SSD Disclosure", "url": "https://ssd-disclosure.com/feed/"},
+        {"name": "0day.today", "url": "https://0day.today/rss"}
+      ]
+    },
+    {
+      "name": "CVEs & Vulnérabilités",
+      "color": "#ffa500",
+      "priority": 2,
+      "feeds": [
+        {"name": "NVD — Critical", "url": "https://nvd.nist.gov/feeds/xml/cve/misc/nvd-rss-analyzed.xml"},
+        {"name": "CVEfeed.io — High", "url": "https://cvefeed.io/rssfeed/severity/high.xml"},
+        {"name": "ANSSI — Alertes", "url": "https://www.cert.ssi.gouv.fr/feed/"},
+        {"name": "Microsoft Security", "url": "https://api.msrc.microsoft.com/update-guide/rss"}
+      ]
+    },
+    {
+      "name": "Malware & Ransomware",
+      "color": "#05d5fa",
+      "priority": 1,
+      "feeds": [
+        {"name": "Ransomware.live", "url": "https://ransomware.live/feed.xml"},
+        {"name": "vx-underground", "url": "https://vx-underground.org/rss.xml"},
+        {"name": "ThreatFox", "url": "https://threatfox.abuse.ch/browse/rss/"},
+        {"name": "MalwareBazaar", "url": "https://bazaar.abuse.ch/browse/rss/"},
+        {"name": "ANY.RUN", "url": "https://any.run/cybersecurity-blog/category/malware-analysis/feed/"}
+      ]
+    },
+    {
+      "name": "Threat Intelligence",
+      "color": "#a855f7",
+      "priority": 2,
+      "feeds": [
+        {"name": "Cisco Talos", "url": "https://blog.talosintelligence.com/feeds/posts/default"},
+        {"name": "CrowdStrike", "url": "https://www.crowdstrike.com/blog/feed/"},
+        {"name": "Mandiant", "url": "https://www.mandiant.com/resources/blog/rss.xml"},
+        {"name": "Unit42", "url": "https://unit42.paloaltonetworks.com/feed/"},
+        {"name": "Securelist", "url": "https://securelist.com/feed/"}
+      ]
+    }
+  ]
+}
